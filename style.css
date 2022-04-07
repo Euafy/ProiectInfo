@@ -1,0 +1,83 @@
+.valori, .parametri, .tablouri {
+    background-color:rgb(53, 46, 46);
+    width:30%;
+    padding-top: 5%;
+    margin-top: 30vh;
+    position:absolute;
+    border: 4px solid rgb(8, 218, 8);
+    border-radius: 50px;
+    filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    color:rgb(255, 174, 0);
+    text-decoration: none;
+    
+}
+
+
+a:hover {
+    color: yellow;
+}
+
+
+
+span{
+    font-size:10em;
+    margin-left:13vw;
+    top:33.7vh;
+    position:absolute;
+    color:rgb(9, 170, 9);
+
+}
+
+span:hover {
+    color: rgb(0, 255, 0);
+    cursor:pointer;
+}
+
+#question2 {
+    margin-left: 48vw;
+}
+
+#question3 {
+    margin-left: 82vw;
+}
+
+.valori {
+    padding-bottom: 5%;
+    
+}
+
+.parametri {
+    margin-left:34.4vw;
+    padding-bottom: 3%;
+
+}
+
+.tablouri {
+    margin-left: 68.5vw;
+    padding-bottom: 3%;
+    
+}
+
+.valori_back, .parametri_back, .tablouri_back {
+    width:29.5%;
+    padding-top: 13.8%;
+    margin-top: 30vh;
+    margin-left: 0.1vw;
+    position:absolute;
+    border: 7px solid rgb(8, 218, 8);
+    border-radius: 50px;
+}
+.parametri_back {
+    margin-left:34.5vw;
+}
+
+.tablouri_back {
+    margin-left:68.9vw;
+}
