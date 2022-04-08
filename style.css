@@ -11,6 +11,7 @@
 
 h1 {
     text-align: center;
+    line-height:1.6;
 }
 
 a {
@@ -40,12 +41,20 @@ span:hover {
     cursor:pointer;
 }
 
+#question1, #question2, #question3 {
+    margin-top: 2vh;
+}
+
+#question1 {
+    margin-left: 12.5vw;
+}
+
 #question2 {
-    margin-left: 48vw;
+    margin-left: 47.5vw;
 }
 
 #question3 {
-    margin-left: 82vw;
+    margin-left: 81.5vw;
 }
 
 .valori {
@@ -55,19 +64,19 @@ span:hover {
 
 .parametri {
     margin-left:34.4vw;
-    padding-bottom: 3%;
+    padding-bottom: 2.3%;
 
 }
 
 .tablouri {
     margin-left: 68.5vw;
-    padding-bottom: 3%;
+    padding-bottom: 2.3%;
     
 }
 
 .valori_back, .parametri_back, .tablouri_back {
     width:29.5%;
-    padding-top: 13.8%;
+    padding-top: 14.5%;
     margin-top: 30vh;
     margin-left: 0.1vw;
     position:absolute;
@@ -80,4 +89,8 @@ span:hover {
 
 .tablouri_back {
     margin-left:68.9vw;
+}
+
+u {
+    text-underline-offset: 10px;
 }
