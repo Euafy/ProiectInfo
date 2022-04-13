@@ -33,6 +33,23 @@ h1 {
     line-height:1.6;
 }
 
+.intro {
+    width:30%;
+    height:30vh;
+    top:0;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.video {
+    width:100%;
+    height:inherit;
+    border: 6px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-left:50%;
+    transform: translate(-50%, 0);
+}
+
 h1, h2, h3, h4, h5, a {
     font-family: Comic Sans MS, Comic Sans, cursive;
 }
