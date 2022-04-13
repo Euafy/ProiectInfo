@@ -1,17 +1,40 @@
-.valori, .parametri, .tablouri {
-    background-color:rgb(53, 46, 46);
-    width:30%;
-    padding-top: 5%;
-    margin-top: 30vh;
+body {
+   background-color: rgb(78, 77, 77);
+}
+
+.container {
+    width:90%;
     position:absolute;
-    border: 4px solid rgb(8, 218, 8);
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.border {
+    float:left;
+    width:30%;
+    border: 7px solid rgb(255,255,255);
     border-radius: 50px;
+    margin-right:2%;
+    position: relative;
+}
+.valori {
+    background-color:rgb(53, 46, 46);
+    width:100%;
+    float:left;
     filter: blur(10px);
+    overflow:auto;
+    border-radius: 50px;
+    position:relative;
 }
 
 h1 {
     text-align: center;
     line-height:1.6;
+}
+
+h1, h2, h3, h4, h5, a {
+    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 a {
@@ -32,64 +55,35 @@ span{
     margin-left:13vw;
     top:33.7vh;
     position:absolute;
-    color:rgb(9, 170, 9);
-
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 4, 4);
 }
 
 span:hover {
-    color: rgb(0, 255, 0);
+    opacity: 70%;
     cursor:pointer;
 }
 
 #question1, #question2, #question3 {
-    margin-top: 2vh;
+    margin-top: 3%;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 #question1 {
-    margin-left: 12.5vw;
+    margin-left: 4%;
 }
 
 #question2 {
-    margin-left: 47.5vw;
+    margin-left: 33%;
 }
 
 #question3 {
-    margin-left: 81.5vw;
+    margin-left: 62.5%;
 }
 
-.valori {
-    padding-bottom: 5%;
-    
-}
 
-.parametri {
-    margin-left:34.4vw;
-    padding-bottom: 2.3%;
 
-}
-
-.tablouri {
-    margin-left: 68.5vw;
-    padding-bottom: 2.3%;
-    
-}
-
-.valori_back, .parametri_back, .tablouri_back {
-    width:29.5%;
-    padding-top: 14.5%;
-    margin-top: 30vh;
-    margin-left: 0.1vw;
-    position:absolute;
-    border: 7px solid rgb(8, 218, 8);
-    border-radius: 50px;
-}
-.parametri_back {
-    margin-left:34.5vw;
-}
-
-.tablouri_back {
-    margin-left:68.9vw;
-}
 
 u {
     text-underline-offset: 10px;

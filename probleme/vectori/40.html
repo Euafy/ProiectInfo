@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cod.css">
+    <script src="../lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../lib/codemirror.css">
+    <script src="../mode/clike/clike.js"></script>
+    <link rel="stylesheet" href="../theme/icecoder.css">
+    <title>VectorMaxMinSum</title>
+</head>
+<body>
+    <div class="homebutton">
+        <a href="../../index.html"><img src="../Untitled-1.png" height="70px"></a>
+    </div>
+
+    <div class="top">
+
+
+        <div class="titlu">
+            <h1><u>#40 VectorMaxMinSum</u></h1>
+            <h4 class="subtitlu"><a href="../tablouri.html"><u class="special_u">(Vezi Toate Problemele)</u></a></h4>
+        </div>
+
+   </div>
+
+
+
+    <div class="scrollbox">
+        <div class="text">
+            <h3>Scrieți definiția completă a subprogramului <span class="important">P</span>, care primește prin intermediul parametrului <span class="important">n</span>
+                un număr natural nenul (<span class="important">n≤100</span>), 
+                iar prin intermediul parametrului <span class="important">x</span>, un tablou unidimensional cu <span class="important">n</span> componente întregi,
+                de maximum opt cifre fiecare.
+      
+                <br><br>
+                Subprogramul furnizează prin parametrului <span class="important">mini</span> valoarea minimă din tabloul <span class="important">x</span>
+                prin intermediul parametrului <span class="important">maxi</span> valoarea maximă din <span class="important">x</span>,
+                iar prin intermediul parametrului <span class="important">sum</span> suma elementelor din tabloul <span class="important">x</span>.
+            </h3>
+            <h1>Restricţii şi precizări</h1>
+            <ul>
+                <li><span class="important">0 &lt n &lt= 100</span></li>
+                <li>numele subprogramului cerut este <span class="important">P</span></li>
+                <li>parametrii sunt, în această ordine: <span class="important">x</span>, <span class="important">n</span>, <span class="important">mini</span>, 
+                    <span class="important">maxi</span>, <span class="important">sum</span>
+                </li>
+
+                <li>elementele vectorului <span class="important">x</span> sunt indexate de la <span class="important">0</span></li>
+            </ul>
+            <h1>Exemplu</h1>
+            <h3>Dacă <span class="important">n=6</span> și <span class="important">x= (12, 7, 6, 3, 8, 5)</span>, după apel <span class="important">mini=3</span>,
+                <span class="important">maxi=12</span> și <span class="important">sum=41</span>.
+            
+            </h3>
+            <h1>Important</h1>
+            <h3>Soluţia propusă va conţine doar definiţia funcţiei cerute.
+                Prezenţa în soluţie a altor instrucţiuni poateduce la erori de <br>compilare sau de execuţie care vor avea ca efect depunctarea soluţiei.
+            </h3>
+        </div>
+
+    </div>
+    <div class="container-sursa">
+        <div class="sursa">
+            <a href="crearenumar.cpp" download="crearenumar.cpp" class="download"><b>Descarcă sursa!</b></a>        
+            <div id="code"></div>   
+        </div>
+
+    </div>
+
+    <buna>
+    <script>
+        var editor = CodeMirror(document.getElementById("code"), {
+            value:" void P (int x[],int n, int &mini, int &maxi, int &sum) {\    mini = x[0];\n    maxi = x[0];\n    sum = 0;\n\n    for (int i = 0; i < n; i++) {\n        if (x[i] < mini) mini = x[i];\n        if (x[i] > maxi) maxi = x[i];\n\n        sum += x[i];\n    }\n\n }",
+            lineNumbers: true,
+            theme: "icecoder",
+            mode: "text/x-c++src",
+        })
+    </script>
+
+<iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

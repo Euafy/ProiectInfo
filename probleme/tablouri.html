@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Subprograme care prelucrează tablouri unidimensionale</title>
     <link rel="stylesheet" href="probleme.css">
     <script src="probleme.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Puddles&effect=3d" >
@@ -12,67 +12,82 @@
 </head>
 <body>
 
-    <a href="/index.html">
-        <img class="homebutton" src="Untitled-1.png">
-    </a>
+    <div class="top">
+        <div class="homebutton">
 
-    <h1><u>Subprograme care prelucrează tablouri unidimensionale</u></h1>
-
-    <div id="first_box">
-        <div class="text">
-            <h1><u>IDKKKK</u></h1>
-            <h1 class="number">#896</h1>
+            <a href="../index.html"><img src="Untitled-1.png" height="70px"></a>
         </div>
+        <h1><u>Subprograme care prelucrează tablouri unidimensionale</u></h1>
+    </div>
+
+
+
+    <div class="container">
+        <div class="box">
+	        <div class="blur" id="first_box"> 
+	            <div class="text">
+                    <h1><u>CreareNumar</u></h1>
+                    <h1>#41</h1>
+       		    </div>
+           
+                <div class="sol">
+                    <h2><a href="vectori/41.html">Solutie</a></h2>
+                </div>
+	        </div>
+        </div>
+        <div class="questions">
+            <span onclick="iframe1()" id="question1">?</span>  
+        </div>
+
+
+        <div class="box">
+	        <div class="blur" id="second_box">
+                <div class="text">
+                    <h1><u>ordon123</u></h1>
+                    <h1>#2083</h1>
+                </div>
             
-        <div class="sol">
-            <h2><a href="">Solutie</a></h2>
+                <div class="sol">
+                    <h2><a href="vectori/2083.html">Solutie</a></h2>
+                </div>
+        
+            </div>
+	    </div>
+
+        <div class="questions">
+            <span onclick="iframe2()" id="question2">?</span>    
         </div>
 
-    </div>
-    <div id="box1">
 
-    </div>
-
-    <div id="second_box" id="second">
-        <div class="text">
-            <h1><u>CreareNumar</u></h1>
-            <h1 class="number">#41</h1>
-        </div>
+        <div class="box"> 
+            <div class="blur" id="third_box">
+                <div class="text">
+                    <h1><u>VectorMaxMinSum</u></h1>
+                    <h1>#40</h1>
+                </div>
             
-        <div class="sol">
-            <h2><a href="">Solutie</a></h2>
+                <div class="sol">
+                    <h2><a href="vectori/40.html">Solutie</a></h2>
+                </div>
+            </div>
+    
         </div>
-    </div>
-
-    <div id="box2">
-
-    </div>
-
-    <div id="third_box" id="third"> 
-        <div class="text">
-            <h1><u>ordon123</u></h1>
-            <h1 class="number">#2083</h1>
+        <div class="questions">
+            <span onclick="iframe3()" id="question3">?</span>    
         </div>
-            
-        <div class="sol">
-            <h2><a href="">Solutie</a></h2>
-        </div>
-    </div>
 
-    <div id="box3">
 
     </div>
-
     <div id="questions" class="font-effect-3d">
-        <span onclick="iframe1()" id="question1">?</span>
-        <span onclick="iframe2()" id="question2">?</span>
-        <span onclick="iframe3()" id="question3">?</span>
+
+
+
 
     </div>
 
-    <iframe src="https://www.pbinfo.ro/probleme/896/factorialf" id="iframe1"></iframe>
-    <iframe src="https://www.pbinfo.ro/probleme/41/crearenumar" id="iframe2"></iframe> 
-    <iframe src="https://www.pbinfo.ro/probleme/2083/ordon123" id="iframe3"></iframe> 
+    <iframe src="https://www.pbinfo.ro/probleme/41/crearenumar" id="iframe1"></iframe> 
+    <iframe src="https://www.pbinfo.ro/probleme/2083/ordon123" id="iframe2"></iframe> 
+    <iframe src="https://www.pbinfo.ro/probleme/40/vectormaxminsum" id="iframe3"></iframe> 
 
 </body>
 </html>

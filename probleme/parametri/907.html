@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cod.css">
+    <script src="../lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../lib/codemirror.css">
+    <script src="../mode/clike/clike.js"></script>
+    <link rel="stylesheet" href="../theme/icecoder.css">
+    <title>AfisareNumerePare1</title>
+</head>
+<body>
+    <div class="homebutton">
+        <a href="../../index.html"><img src="../Untitled-1.png" height="70px"></a>
+    </div>
+
+    <div class="top">
+
+
+        <div class="titlu">
+            <h1><u>#907 AfisareNumerePare1</u></h1>
+            <h4 class="subtitlu"><a href="../parametri.html"><u class="special_u">(Vezi Toate Problemele)</u></a></h4>
+        </div>
+
+   </div>
+
+
+
+    <div class="scrollbox">
+        <div class="text">
+            <h3>Scrieți definiția completă a funcției C++ <span class="important">afisare</span>
+                care primește doi parametri <span class="important">a</span> și <span class="important">b</span> și afișează pe ecran,
+                în ordine crescătoare, numerele naturale pare cuprinse între <span class="important">a</span> și <span class="important">b</span>, inclusiv acestea.
+            </h3>
+            <h1>Restricţii şi precizări</h1>
+            <ul>
+                <li>numele funcției va fi <span class="important">afisare</span></li>
+                <li>funcția va avea exact doi parametri: <span class="important">a</span>, respectiv <span class="important">b</span></li>
+                <li><span class="important">0 &lt; a , b &lt;= 1000</span></li>
+                <li>numerele vor fi afișate pe aceeași linie, separate prin câte un spațiu</li>
+            </ul>
+            <h1>Exemplu</h1>
+            <h3>Dacă <span class="important">a=7</span> și <span class="important">b=2</span>, apelul subprogramului va afișa pe ecran:<br>
+                <div class="exemplu">
+                    <h4 class="apel">2 4 6;</h4>
+                 </div>
+            </h3>
+            <h1>Important</h1>
+            <h3>Soluţia propusă va conţine doar definiţia funcţiei cerute.
+                Prezenţa în soluţie a altor instrucţiuni poateduce la erori de <br>compilare sau de execuţie care vor avea ca efect depunctarea soluţiei.
+            </h3>
+        </div>
+
+    </div>
+    <div class="container-sursa">
+        <div class="sursa">
+            <a href="afisarenumerepare1.cpp" download="afisarenumerepare1.cpp" class="download"><b>Descarcă sursa!</b></a>        
+            <div id="code"></div>   
+        </div>
+
+    </div>
+
+    <buna>
+    <script>
+        var editor = CodeMirror(document.getElementById("code"), {
+            value:" void afisare(int a, int b) {\n    int prima, i, ultima, copie;\n\n    if (a > b) {\n        prima = b;\n        ultima = a;\n    }\n    else {\n        prima = a;\n        ultima = b;\n    }\n\n    if (prima % 2 == 0) copie = prima;\n    else copie = prima + 1;\n\n    for (i = copie; i <= ultima; i += 2) cout << i <<' ';\n }",
+            lineNumbers: true,
+            theme: "icecoder",
+            mode: "text/x-c++src",
+        })
+    </script>
+
+<iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

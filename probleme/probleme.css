@@ -1,9 +1,23 @@
+body {
+    background-color: rgb(78, 77, 77);
+ }
+
 .text {
     color:rgb(255, 174, 0);
+    overflow: auto;
 }
-.number {
-    padding:20px;
+
+.box {
+    position: relative;
+    border: 6px solid white;
+    background-color: rgb(53, 46, 46);
+    border-radius: 50px;
+    margin-top:4%;
+    width:30%;
+    text-align:center;
+
 }
+
 a {
     text-decoration: none;
     color:rgb(255, 174, 0);
@@ -14,102 +28,83 @@ a:hover {
 
 }
 
+.questions {
+    position: absolute;
+    width:30%;
+    text-align: center;
+    margin-top:-10%;
+}
+
 span{
     font-size:10em;
-    margin-left:13vw;
-    top:33.7vh;
-    position:absolute;
-    color:rgb(9, 170, 9);
-
+    color:rgb(255, 255, 255);
+    text-shadow: 1px 1px 15px rgb(255, 4, 4);
 }
 
 span:hover {
-    color: rgb(0, 255, 0);
+    opacity:70%;
     cursor:pointer;
 }
 
-#question1 {
-    top:16%;
-}
-
-#question2 {
-    margin-top: 10vh;
-}
-
-#question3 {
-    margin-top:38vh;
-}
-
 h1 {
-    text-align: center;
+
     color:rgb(255, 174, 0);
+    margin-top:0%;
 }
 
 h2 {
     margin-top: 0%;
 }
-#first_box, #second_box, #third_box {
-    background-color:rgb(53, 46, 46);
-    width:30%;
-    padding-top: 5%;
-    margin-top:30vh;
-    border: 4px solid rgb(8, 218, 8);
-    border-radius: 50px;
-    padding-bottom: 3%;
+
+.blur {
     filter: blur(10px);
 }
 
-#box1, #box2, #box3 {
-    position:absolute;
-    border: 7px solid rgb(8, 218, 8);
-    border-radius: 50px;
-    width:29.5%;
-    padding-top: 11.1%;
-    margin-top: -24vh;
-}
+#question-mark-container {
+	width: 100%;
+	height: 100%;
+        position: absolute;
+	top: 0;
+	left: 0;
 
-#first_box {
-    margin-top:4%;
 }
-
-#second_box, #third_box {
-    margin-top: 2%;
-}
-
 
 .sol {
+    
+    position:relative;
+    left:50%;
+    transform: translate(-50%, 0);
     background-color: rgb(0, 102, 255);
-    width:20%;
-    border: 4px solid rgb(0, 102, 255);
+    width:30%;
     border-radius: 15px;
     text-align: center;
-    height:2.5vh;
-    width:7vw;
-    margin-left: 11vw;
-    margin-top: -2vh;
-    position:absolute;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
-.number {
-    margin-top: -5%;
-}
-
-.text {
-    margin-top: -15%;
-}
-
 
 
 u {
     text-underline-offset: 10px;
 }
 
-.homebutton {
-    position: absolute;
-    height: 10vh;
+
+h1, h2, h3, h4, h5, a {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.top {
+    text-align: center;
+    width:95%;
+    left:0;
     top:0;
-    left: 1.5%;
+}
+
+.homebutton {
+    width:5%;
+    background-color:rgb(110, 108, 108) ;
+    border-radius: 30px;
+    float:left;
+    position: absolute;
+    top:0;
 }
 
 .homebutton:hover {
@@ -122,9 +117,12 @@ iframe {
     position:absolute;
     right:5vw;
     top:20vh;
-    border:2px solid #000;
+    border:4px solid rgb(0, 0, 0);
     border-radius: 15px;
     display:none;
 }
 
 
+img {
+    width:100%;
+}

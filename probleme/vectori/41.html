@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cod.css">
+    <script src="../lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../lib/codemirror.css">
+    <script src="../mode/clike/clike.js"></script>
+    <link rel="stylesheet" href="../theme/icecoder.css">
+    <title>CreareNumar</title>
+</head>
+<body>
+    <div class="homebutton">
+        <a href="../../index.html"><img src="../Untitled-1.png" height="70px"></a>
+    </div>
+
+    <div class="top">
+
+
+        <div class="titlu">
+            <h1><u>#41 CreareNumar</u></h1>
+            <h4 class="subtitlu"><a href="../tablouri.html"><u class="special_u">(Vezi Toate Problemele)</u></a></h4>
+        </div>
+
+   </div>
+
+
+
+    <div class="scrollbox">
+        <div class="text">
+            <h3>Scrieți definiția completă a subprogramului <span class="important">F</span>, care primește prin intermediul parametrului <span class="important">n</span>
+                un număr natural nenul (<span class="important">1≤n≤9</span>), 
+                iar prin intermediul parametrului <span class="important">a</span>, un tablou unidimensional care conţine <span class="important">n</span> valori naturale, 
+                fiecare dintre acestea reprezentând câte o cifră a unui număr. Astfel, <span class="important">a0</span> reprezintă prima cifră a numărului,
+                <span class="important">a1</span> a doua cifră, etc.
+                <br><br>
+                Subprogramul furnizează prin parametrului <span class="important">k</span> o valoare naturală egală cu numărul obţinut 
+                din cifrele pare memorate în tabloul <span class="important">a</span> sau valoarea <span class="important">-1</span> dacă în tablou nu există nicio cifră pară.
+            </h3>
+            <h1>Restricţii şi precizări</h1>
+            <ul>
+                <li><span class="important">0 &lt n &lt 10</span></li>
+                <li>numele subprogramului cerut este <span class="important">F</span></li>
+                <li>parametrii sunt, în această ordine: <span class="important">n</span>, <span class="important">a</span>, <span class="important">k</span></li>
+                <li>elementele vectorului <span class="important">a</span> sunt indexate de la zero</li>
+                <li>valoarea lui <span class="important">k</span> nu va depăși <span class="important">2000000000</span></li>
+            </ul>
+            <h1>Exemplu</h1>
+            <h3>Dacă <span class="important">n=6</span> și <span class="important">a= (2, 3, 5, 6, 4, 1)</span>, după apel <span class="important">k=264</span>.</h3>
+            <h1>Important</h1>
+            <h3>Soluţia propusă va conţine doar definiţia funcţiei cerute.
+                Prezenţa în soluţie a altor instrucţiuni poateduce la erori de <br>compilare sau de execuţie care vor avea ca efect depunctarea soluţiei.
+            </h3>
+        </div>
+
+    </div>
+    <div class="container-sursa">
+        <div class="sursa">
+            <a href="vectormaxminsum.cpp" download="vectormaxminsum.cpp" class="download"><b>Descarcă sursa!</b></a>        
+            <div id="code"></div>   
+        </div>
+
+    </div>
+
+    <buna>
+    <script>
+        var editor = CodeMirror(document.getElementById("code"), {
+            value:" void F(int n, int a[], int &k) {\n    k = 0;\n    int contor = 0, i;\n\n    for (i = 0; i < n; i++) {\n        if (a[i]%2 == 0 ) {\n            k = k*10 + a[i];\n            contor++;\n        }\n    }\n    if ( contor == 0) k = -1;\n\n }",
+            lineNumbers: true,
+            theme: "icecoder",
+            mode: "text/x-c++src",
+        })
+    </script>
+
+<iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cod.css">
+    <script src="../lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../lib/codemirror.css">
+    <script src="../mode/clike/clike.js"></script>
+    <link rel="stylesheet" href="../theme/icecoder.css">
+    <title>PermCircCif</title>
+</head>
+<body>
+    <div class="homebutton">
+        <a href="../../index.html"><img src="../Untitled-1.png" height="70px"></a>
+    </div>
+
+    <div class="top">
+
+
+        <div class="titlu">
+            <h1><u>#909 PermCircCif</u></h1>
+            <h4 class="subtitlu"><a href="../parametri.html"><u class="special_u">(Vezi Toate Problemele)</u></a></h4>
+        </div>
+
+   </div>
+
+
+
+    <div class="scrollbox">
+        <div class="text">
+            <h3>Să se scrie o funcție C++ care să realizează permutarea circulară spre stânga a cifrelor unui număr natural.
+                Numărul este transmis prin intermediul unui parametru care se întoarce din funcție modificat.
+            </h3>
+            <h1>Restricţii şi precizări</h1>
+            <ul>
+                <li>numele funcției va fi <span class="important">perm</span></li>
+                <li>funcția va avea un singur parametru, <span class="important">n</span></li>
+                <li>parametrul <span class="important">n</span> va fi un număr natural mai mic decât <span class="important">1.000.000.000</span></li>
+            </ul>
+            <h1>Exemplu</h1>
+            <h3>Dacă <span class="important">n = 1372</span>, după apelul funcției <span class="important">perm</span>, valoarea lui <span class="important">n</span>
+                va fi <span class="important">3721</span>.
+            </h3>
+            <h1>Important</h1>
+            <h3>Soluţia propusă va conţine doar definiţia funcţiei cerute.
+                Prezenţa în soluţie a altor instrucţiuni poateduce la erori de <br>compilare sau de execuţie care vor avea ca efect depunctarea soluţiei.
+            </h3>
+        </div>
+
+    </div>
+    <div class="container-sursa">
+        <div class="sursa">
+            <a href="permcirccif.cpp" download="permcirccif.cpp" class="download"><b>Descarcă sursa!</b></a>        
+            <div id="code"></div>   
+        </div>
+
+    </div>
+
+    <buna>
+    <script>
+        var editor = CodeMirror(document.getElementById("code"), {
+            value:"void perm(int &n) {\n    int v[9], i = 0, ultimaCifra, j;\n\n    while (n != 0) {\n        v[i] = n % 10;\n        i++;\n        n /= 10;\n    }\n\n    ultimaCifra = v[i-1];\n\n    for (j = i-2; j >= 0; j--) {\n        n = n*10 +v[j];\n    }\n\n    n = n*10 + ultimaCifra;\n}",
+            lineNumbers: true,
+            theme: "icecoder",
+            mode: "text/x-c++src",
+        })
+    </script>
+
+<iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
